@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kids IQ test </title>
+  <meta charset="UTF-8">
+  <meta name="description" content="The best iq test for kids">
+  <meta name="keywords" content=" iq test , All kids are smart , 10 questions for every question 100 marks ">
+  <meta name="author" content="The little Genius center">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="custom2.css">
+  <link rel="icon" type="img" href="img/iq2.png">
+  <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="fontawesome-free-5.11.2-web/css/all.css">
+<!-- 	<style type="text/css">
+  #one{
+ 
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+
+@keyframes example {
+  from {opacity:0; font-size: 20px;}
+  to {opacity:100%; font-size: 45px;}
+}
+</style> -->
+</head>
+<body>
+	<header>
+    <nav class="navbar navbar-expand-lg navbar-dark pl-5 pr-5" style="background-color:#58A6E7;">
+     <a class="navbar-brand"><img class="ml-5" src="img/iq2.png" width="50"><strong class="text-white mt-2 ml-2"> The little Genius</strong> </a>
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" >
+      <ul class="navbar-nav ml-auto">
+        <li  class="nav-item ">
+          <a id="na" class="nav-link pt-3 px-0 px-lg-3  js-scroll-trigger font-weight-bolder text-dark"  href="home.html"><h4>logout</h4></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<br>
+<br>
+
+
+
+<div id="one" class="text-center pt-5 mb-5 mt-5 font-weight-bolder" style="font-size: 45px; color: #4F9CDC;" >
+
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript">
+    var result = parseInt(localStorage.getItem("totalmark2"));
+    document.write("Your Result is : " +result +" from 1000" +"<br>");
+    if(result == 1000){
+      document.write("You are Gifted ");
+    }
+    if(result == 900){
+      document.write("You are Superior");
+      $("document").ready(function() {
+        $("#divone").show();
+        $("#button1").show();
+      });
+    }
+    if(result == 800){
+      document.write("You are In High average ");
+      $("document").ready(function() {
+        $("#divone").show();  
+        $("#button1").show();
+      });
+    }
+    if(result == 700){
+      document.write("You are In Average");
+      $("document").ready(function() {
+        $("#divone").show();
+        $("#button1").show();
+      });
+    }
+    if(result == 600){
+      document.write("You are In Average");
+      $("document").ready(function() {
+        $("#divone").show();
+        $("#button1").show();
+      });
+    }
+    if(result <= 500){
+      document.write("You are Normal");
+      $("document").ready(function() {
+        $("#divone").show();
+        $("#button1").show();
+      });
+    }
+
+  </script>
+</div>
+
+
+
+<div style="display: none;" id="divone" class="text-center">
+  <h5>If you want to see your answers and the correct answers <br> click the button </h5>
+  <br>
+  <a href="myanswer.html"> <button type="submit" class="btn text-center text-white font-weight-bolder pl-5 pr-5" id="button1" style="background-color:#1D8BB7;">My Answers</button></a>
+
+</div>
+
+<div class="row mt-5">
+ <div class="col text-center mt-5">
+  <img src="img/My-Little-Genius-Brain.jpg" width="400" alt=" My Genius kids" >
+</div>
+</div>
+<br>
+<br>
+<div class="footer text-white text-center  mt-5 pt-4 pb-4" style="background-color:#4096DC;" >
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <h3>The little Genius</h3>
+        <h6 class="font-weight-normal">All kids are smart, but to different degrees</h6>
+      </div>
+      <div class="col-sm-4" >
+        <h3 class="pb-3">Follow us : </h3>
+        <a class="btn btn-outline btn-social"  href="https://web.facebook.com/TLGcenter/?_rdc=1&_rdr" target="_blank" >
+         <h3> <i class="fab fa-facebook-square" id="icon"></i></h3>
+       </a>
+       <a class="btn btn-outline btn-social" href="https://twitter.com/littlegeniusloc?lang=en"  target="_blank">
+         <h3> <i class="fab fa-fw fa-twitter" id="icon"></i></h3>
+       </a>
+       <a class="btn btn-outline btn-social" href="https://www.instagram.com/explore/locations/235404446/little-genius"  target="_blank">
+         <h3> <i class="fab fa-instagram" id="icon"></i></h3>
+       </a>
+       <a class="btn btn-outline btn-social" href="https://www.youtube.com/channel/UCGCAaeF4wJzHRz8Bwy67FFA"  target="_blank">
+         <h3> <i class="fab fa-youtube" id="icon"></i></h3>
+       </a>
+     </div>
+     <div class="col-sm-4">
+       <h3 class="font-weight-normal">IQ is one of the key drivers of success for a child</a>.</h3>
+     </div>
+   </div>
+ </div>
+</div>
+<section class="copyright py-4 text-center text-white " style="background-color: #4F9CDC;">
+  <div class="container">
+    <h6>Copyright © Your Website 2019</>
+    </div>
+  </section>
+</body>
+</html>

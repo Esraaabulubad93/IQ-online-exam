@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kids IQ test </title>
+  <meta charset="UTF-8">
+  <meta name="description" content="The best iq test for kids">
+  <meta name="keywords" content=" iq test , All kids are smart , 10 questions for every question 100 marks ">
+  <meta name="author" content="The little Genius center">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="img" href="img/iq2.png">
+  <link rel="stylesheet" type="text/css" href="custom2.css">
+  <link rel="stylesheet" type="text/css" href="custom.css">
+  <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="fontawesome-free-5.11.2-web/css/all.css">
+  <script type="text/javascript">
+  /*localStorage.setItem("user","Admin");
+  localStorage.setItem("pass",12345);*/
+  var name = localStorage.getItem("user");
+  var password = localStorage.getItem("pass");
+  function submitPass() {
+    var form = document.formone;
+    var n1 = form.elements['username'].value;
+    var p1 = form.elements['userpass'].value;
+    if(n1 == name & p1== password ){
+      
+      window.location.href='choice.html';
+    }
+    else
+      alert("Incorrect Password or Username");
+    
+    
+    return false;
+  }
+  
+  
+</script>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark pl-5 pr-5" style="background-color:#58A6E7;">
+     <a class="navbar-brand"><img class="ml-5" src="img/iq2.png" width="50"><strong class="text-white mt-2 ml-2"> The little Genius</strong> </a>
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" >
+      <ul class="navbar-nav ml-auto">
+        <li  class="nav-item ">
+          <a id="na" class="nav-link pt-3 px-0 px-lg-3  js-scroll-trigger font-weight-bolder text-dark"  href="home.html"><h4>Home</h4></a>
+        </li>
+         <!--  <li class="nav-item mx-0 mx-lg-1">
+            <a id="na" class="nav-link pt-3 px-0 px-lg-3 js-scroll-trigger  font-weight-bolder text-dark" href="login.html"><h4>Login</h4></a>
+          </li> -->
+          
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+
+  <div class="mb-5">
+    <img  src="img/img.png" alt="background" width="100%" height="600" alt="Card image">
+    <div class="card-img-overlay mt-5 ">
+     <div  class="text-center">
+      <h3>&nbsp;</h3>
+      <h3>&nbsp;</h3>
+      <h3>&nbsp;</h3>
+      <div class=" mt-5 mb-5"style="color: #5CE131;">
+       <div class="wrapper fadeInDown">
+        <div id="formContent">
+          <form name="formone" onsubmit="return submitPass()">
+           <br><br>
+           <input type="text" required="required" id="login" class="fadeIn second" name="username" placeholder="User Name"><br>
+           <input type="password" required="required" id="password" class="fadeIn third" name="userpass" placeholder="password"><br><br>
+           <input type="Submit" value="login" >
+         </form>
+       </div>
+     </div>
+   </div>
+   
+   
+   
+ </div>
+</div>
+</div>
+
+<br>
+<br>
+<div class="footer text-white text-center  mt-5 pt-4 pb-4" style="background-color:#4096DC;" >
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <h3>The little Genius</h3>
+        <h6 class="font-weight-normal">All kids are smart, but to different degrees</h6>
+      </div>
+      <div class="col-sm-4" >
+        <h3 class="pb-3">Follow us : </h3>
+        <a class="btn btn-outline btn-social"  href="https://web.facebook.com/TLGcenter/?_rdc=1&_rdr" target="_blank" >
+         <h3> <i class="fab fa-facebook-square" id="icon"></i></h3>
+       </a>
+       <a class="btn btn-outline btn-social" href="https://twitter.com/littlegeniusloc?lang=en"  target="_blank">
+         <h3> <i class="fab fa-fw fa-twitter" id="icon"></i></h3>
+       </a>
+       <a class="btn btn-outline btn-social" href="https://www.instagram.com/explore/locations/235404446/little-genius"  target="_blank">
+         <h3> <i class="fab fa-instagram" id="icon"></i></h3>
+       </a>
+       <a class="btn btn-outline btn-social" href="https://www.youtube.com/channel/UCGCAaeF4wJzHRz8Bwy67FFA"  target="_blank">
+         <h3> <i class="fab fa-youtube" id="icon"></i></h3>
+       </a>
+     </div>
+     <div class="col-sm-4">
+       <h3 class="font-weight-normal">IQ is one of the key drivers of success for a child</a>.</h3>
+     </div>
+   </div>
+ </div>
+</div>
+<section class="copyright py-4 text-center text-dark bg-warning">
+  <div class="container">
+    <h6>Copyright © Your Website 2019</>
+    </div>
+  </section>
+</body>
+</html>

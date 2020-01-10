@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kids IQ test </title>
+  <meta charset="UTF-8">
+  <meta name="description" content="The best iq test for kids">
+  <meta name="keywords" content=" iq test , All kids are smart , 10 questions for every question 100 marks ">
+  <meta name="author" content="The little Genius center">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="img" href="img/iq2.png">
+  <link rel="stylesheet" type="text/css" href="custom.css">
+  <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="fontawesome-free-5.11.2-web/css/all.css">
+  <script type="text/javascript" src="jquery.js"></script>
+
+</head>
+<body>
+	<header>
+    <nav class="navbar navbar-expand-lg navbar-dark pl-5 pr-5" style="background-color:#58A6E7;">
+      <h1 class="ml-5 text-white">&nbsp;&nbsp; Your answers</h1> 
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" >
+        <ul class="navbar-nav ml-auto">
+          <li  class="nav-item ">
+            <a  class="nav-link pt-3 px-0 px-lg-3  js-scroll-trigger font-weight-bolder text-dark"  href="home.html"><h4>logout</h4></a>
+          </li>
+          
+          
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- <div class="text-center p-3 " style="background-color:#58A6E7;"><h1 class="text-white">Your answers</h1></div> -->
+
+  <div class="row">
+   <div class="col p-5 font-weight-bolder " style=" font-size: 20px;">
+   	<label class="ml-5"><h1>Q1 :  What is the color of blood ?</h1></label><br>
+   	<h3 id="demo1"></h3>
+   	<h3 id="demo11" style="color: green"></h3>
+   </div>
+ </div>
+ <div class="row">
+   <div class="col p-5 font-weight-bolder" style=" font-size: 20px;">
+   	<label class="ml-5"><h1>Q2 :  What are clothes made of ?</h1></label><br>
+   	<h3 id="demo2"></h3>
+   	<h3 id="demo22"style="color: green"></h3>
+   </div>
+ </div>
+ <div class="row">
+   <div class="col p-5 font-weight-bolder" style=" font-size: 20px;">
+   	<label class="ml-5"><h1>Q3 : If 3rd of December is Tuesday so the sixth of December is ?</h1></label><br>
+   	<h3 id="demo3"></h3>
+   	<h3 id="demo33"style="color: green"></h3>
+   </div>
+ </div>
+ <div class="row">
+   <div class="col p-5 font-weight-bolder" style=" font-size: 20px;">
+   	<label class="ml-5"><h1>Q4 : How many minutes are there in a two hours ?</h1></label><br>
+   	<h3 id="demo4"></h3>
+   	<h3 id="demo44"style="color: green"></h3>
+   </div>
+ </div>
+ <div class="row">
+   <div class="col p-5 font-weight-bolder" style=" font-size: 20px;">
+   	<label class="ml-5"><h1>Q5 : Which caterpillar is longer ?</h1></label><br>
+   	<h3 id="demo5"></h3>
+   	<h3 id="demo55"style="color: green"></h3>
+   </div>
+ </div>
+
+
+
+
+ <div class="row">
+   <div class="col p-5 font-weight-bolder " style=" font-size: 20px;">
+   	<label class="ml-5"><h1>Q6 : What color do you get when you mix yellow and blue ?</h1></label><br>
+   	<h3 id="demo6"></h3>
+   	<h3 id="demo66" style="color: green"></h3>
+   </div>
+ </div>
+ <div class="row">
+   <div class="col p-5 font-weight-bolder" style=" font-size: 20px;">
+   	<label class="ml-5"><h1>Q7 : If you rearrange the letters "KOMENY", you would have the name of a:</h1></label><br>
+   	<h3 id="demo7"></h3>
+   	<h3 id="demo77"style="color: green"></h3>
+   </div>
+ </div>
+ <div class="row">
+   <div class="col p-5 font-weight-bolder" style=" font-size: 20px;">
+   	<label class="ml-5"><h1>Q8 : What animal hibernates during the winter ?</h1></label><br>
+   	<h3 id="demo8"></h3>
+   	<h3 id="demo88"style="color: green"></h3>
+   </div>
+ </div>
+ <div class="row">
+   <div class="col p-5 font-weight-bolder" style=" font-size: 20px;">
+   	<label class="ml-5"><h1>Q9 : Which is not a Vegetables ?</h1></label><br>
+   	<h3 id="demo9"></h3>
+   	<h3 id="demo99"style="color: green"></h3>
+   </div>
+ </div>
+ <div class="row">
+   <div class="col p-5 font-weight-bolder" style=" font-size: 20px;">
+   	<label class="ml-5"><h1>Q10 :  Which can reach the highest ?</h1></label><br>
+   	<h3 id="demo10"></h3>
+   	<h3 id="demo1010"style="color: green"></h3>
+   </div>
+ </div>
+
+
+
+
+ <script type="text/javascript">
+  var qu1 = localStorage.getItem("question1");
+  var qu2 = localStorage.getItem("question2");
+  var qu3 = localStorage.getItem("question3");
+  var qu4 = localStorage.getItem("question4");
+  var qu5 = localStorage.getItem("question5");
+  var qu6 = localStorage.getItem("question6");
+  var qu7 = localStorage.getItem("question7");
+  var qu8 = localStorage.getItem("question8");
+  var qu9 = localStorage.getItem("question9");
+  var qu10 = localStorage.getItem("question10");		
+  /*console.log(qu1);*/
+  document.getElementById("demo1").innerHTML = qu1;
+  if(qu1 == "Red"){
+    $("document").ready(function() {
+     $("#demo1").css({"background-color":"green","color":"white", "width":"200px" ,"text-align":"center", "padding":"10px" ,"margin-left":"100px"});
+   });
+  }
+  else{
+    $("document").ready(function() {
+     $("#demo1").css({"background-color":"red" ,"color":"white", "width":"200px" ,"text-align":"center", "padding":"10px" ,"margin-left":"100px"});
+     $("#demo11").css({"margin-left":"100px"});
+     document.getElementById("demo11").innerHTML = "The right answer is Red";
+   });
+  }
+  document.getElementById("demo2").innerHTML = qu2;
+  if(qu2 == "Cloth"){
+    $("document").ready(function() {
+     $("#demo2").css({"background-color":"green" ,"color":"white", "width":"200px" ,"text-align":"center", "padding":"10px" ,"margin-left":"100px"});
+   });
+  }
+  else{
+    $("document").ready(function() {
+     $("#demo2").css({"background-color":"red","color":"white", "width":"200px" ,"text-align":"center", "padding":"10px" ,"margin-left":"100px"});
+     $("#demo22").css({"margin-left":"100px"});
+     document.getElementById("demo22").innerHTML = "The right answer is cloth";
+   });
+  }
+  document.getElementById("demo3").innerHTML = qu3;
+  if(qu3 == "Friday"){
+    $("document").ready(function() {
+     $("#demo3").css({"background-color":"green","color":"white", "width":"200px" ,"text-align":"center", "padding":"10px" ,"margin-left":"100px"});
+   });
+  }
+  else{
+    $("document").ready(function() {
+     $("#demo3").css({"background-color":"red","color":"white", "width":"200px" ,"text-align":"center", "padding":"10px" ,"margin-left":"100px"});
+     $("#demo33").css({"margin-left":"100px"});
+     document.getElementById("demo33").innerHTML = "The right answer is Friday";
+   });
+  }
+  document.getElementById("demo4").innerHTML = qu4;
+  if(qu4 == "120"){
+    $("document").ready(function() {
+     $("#demo4").css({"background-color":"green","color":"white", "width":"200px" ,"text-align":"center", "padding":"10px" ,"margin-left":"100px"});
+   });
+  }
+  else{
+    $("document").ready(function() {
+     $("#demo4").css({"background-color":"red","color":"white", "width":"200px" ,"text-align":"center", "padding":"10px" ,"margin-left":"100px"});
+     $("#demo44").css({"margin-left":"100px"});
+     document.getElementById("demo44").innerHTML = "The right answer is 120 minutes";
+   });
+  }
+  document.getElementById("demo5").innerHTML = qu5;
+  if(qu5 == "caterpillar1"){
+    $("document").ready(function() {
+     $("#demo5").css({"background-color":"green","color":"white", "width":"200px" ,"text-align":"center", "padding":"10px" ,"margin-left":"100px"});
+   });
+  }
+  else{
+    $("document").ready(function() {
+     $("#demo5").css({"background-color":"red","color":"white", "width":"200px" ,"text-align":"center", "padding":"10px" ,"margin-left":"100px"});
+     $("#demo55").css({"margin-left":"100px"});
+     document.getElementById("demo55").innerHTML = "The right answer is Caterpillar 1";
+   });
+  }
+
+
+
+
+
+  document.getElementById("demo6").innerHTML = qu6;
+  if(qu6 == "Green"){
+    $("document").ready(function() {
+     $("#demo6").css({"background-color":"green","color":"white", "width":"200px" ,"text-align":"center", "padding":"10px" ,"margin-left":"100px"});
+   });
+  }
+  else{
+    $("document").ready(function() {
+     $("#demo6").css({"background-color":"red" ,"color":"white", "width":"200px" ,"text-align":"center", "padding":"10px" ,"margin-left":"100px"});
+     $("#demo66").css({"margin-left":"100px"});
+     document.getElementById("demo66").innerHTML = "The right answer is Green";
+   });
+  }
+  document.getElementById("demo7").innerHTML = qu7;
+  if(qu7 == "Animal"){
+    $("document").ready(function() {
+     $("#demo7").css({"background-color":"green" ,"color":"white", "width":"200px" ,"text-align":"center", "padding":"10px" ,"margin-left":"100px"});
+   });
+  }
+  else{
+    $("document").ready(function() {
+     $("#demo7").css({"background-color":"red","color":"white", "width":"200px" ,"text-align":"center", "padding":"10px" ,"margin-left":"100px"});
+     $("#demo77").css({"margin-left":"100px"});
+     document.getElementById("demo77").innerHTML = "The right answer is Animal";
+   });
+  }
+  document.getElementById("demo8").innerHTML = qu8;
+  if(qu8 == "Bear"){
+    $("document").ready(function() {
+     $("#demo8").css({"background-color":"green","color":"white", "width":"200px" ,"text-align":"center", "padding":"10px" ,"margin-left":"100px"});
+   });
+  }
+  else{
+    $("document").ready(function() {
+     $("#demo8").css({"background-color":"red","color":"white", "width":"200px" ,"text-align":"center", "padding":"10px" ,"margin-left":"100px"});
+     $("#demo88").css({"margin-left":"100px"});
+     document.getElementById("demo88").innerHTML = "The right answer is Bear";
+   });
+  }
+  document.getElementById("demo9").innerHTML = qu9;
+  if(qu9 == "Mango"){
+    $("document").ready(function() {
+     $("#demo9").css({"background-color":"green","color":"white", "width":"200px" ,"text-align":"center", "padding":"10px" ,"margin-left":"100px"});
+   });
+  }
+  else{
+    $("document").ready(function() {
+     $("#demo9").css({"background-color":"red","color":"white", "width":"200" ,"text-align":"center", "padding":"10px" ,"margin-left":"100px"});
+     $("#demo99").css({"margin-left":"100px"});
+     document.getElementById("demo99").innerHTML = "The right answer is Mango";
+   });
+  }
+  document.getElementById("demo10").innerHTML = qu10;
+  if(qu10 == "Giraffe"){
+    $("document").ready(function() {
+     $("#demo10").css({"background-color":"green","color":"white", "width":"200px" ,"text-align":"center", "padding":"10px" ,"margin-left":"100px"});
+   });
+  }
+  else{
+    $("document").ready(function() {
+     $("#demo10").css({"background-color":"red","color":"white", "width":"200px" ,"text-align":"center", "padding":"10px" ,"margin-left":"100px"});
+     $("#demo1010").css({"margin-left":"100px"});
+     document.getElementById("demo1010").innerHTML = "The right answer is Giraffe";
+   });
+  }
+</script>
+
+</body>
+</html>

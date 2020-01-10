@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kids IQ test </title>
+  <meta charset="UTF-8">
+  <meta name="description" content="The best iq test for kids">
+  <meta name="keywords" content=" iq test , All kids are smart , 10 questions for every question 100 marks ">
+  <meta name="author" content="The little Genius center">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="img" href="img/iq2.png">
+  <link rel="stylesheet" type="text/css" href="custom2.css">
+  <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="fontawesome-free-5.11.2-web/css/all.css">
+  <script type="text/javascript">
+   function submitAnswers() {
+    var form3 = document.quizForm3;
+    var q11 = form3.elements['answer11'].value;
+    localStorage.setItem("question11",q11);
+    var q12 = form3.elements['answer12'].value;
+    localStorage.setItem("question12",q12);
+    var q13 = form3.elements['answer13'].value;
+    localStorage.setItem("question13",q13);
+    var q14 = form3.elements['answer14'].value;
+    localStorage.setItem("question14",q14);
+    var q15 = form3.elements['answer15'].value;
+    localStorage.setItem("question15",q15);
+    var mark3=0 ;
+    if(q11 == "is"){
+      mark3+=100;
+    }
+    if(q12 == "aunt"){
+      mark3+=100;	
+    }
+    if(q13 == "an"){
+      mark3+=100;
+    }
+    if(q14 == "I am from England"){
+      mark3+=100;
+    }
+    if(q15 == "boxes"){
+      mark3+=100;
+    }
+    localStorage.setItem("totalmark3",mark3);
+    window.location.href='test4.html';
+    return false;
+  }
+</script>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark pl-5 pr-5" style="background-color:#58A6E7;">
+      <a class="navbar-brand"><img class="ml-5" src="img/iq2.png" width="50"><strong class="text-white mt-2 ml-2"> The little Genius</strong> </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" >
+        <ul class="navbar-nav ml-auto">
+          <li  class="nav-item ">
+            <a id="na" class="nav-link pt-3 px-0 px-lg-3  js-scroll-trigger font-weight-bolder text-dark"  href="home.html"><h4>logout</h4></a>
+          </li>
+          
+          
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <form name="quizForm3" onsubmit="return submitAnswers()">
+    <div class="row">
+     <div class="col p-5 font-weight-bolder " style="color:#061E56 ; font-size: 20px;">
+      <label class="ml-5"><h1>Q1 :  This … my brother Mike.</h1></label><br>
+      
+      &nbsp;<input class="ml-5" type="radio" name="answer11" required="required" value="has"> has<br>
+      &nbsp;<input class="ml-5" type="radio" name="answer11" required="required" value="are"> are<br>
+      &nbsp;<input class="ml-5" type="radio" name="answer11" required="required" value="is"> is <br>
+    </div>
+  </div>
+
+  <div class="row">
+   <div class="col p-5 font-weight-bolder" style="background-color: #9CD6E3 ; font-size: 20px;">
+   	<label class="ml-5"><h1>Q2 :  My father’s sister is my … .</h1></label><br>
+   	
+    &nbsp;<input class="ml-5 " type="radio" name="answer12" required="required" value="uncle"> uncle<br>
+    &nbsp;<input class="ml-5" type="radio" name="answer12" required="required" value="duaghter"> duaghter<br>
+    &nbsp;<input class="ml-5" type="radio" name="answer12" required="required" value="aunt"> aunt<br>
+  </div>
+</div>
+<div class="row">
+ <div class="col p-5 font-weight-bolder " style="color:#061E56 ; font-size: 20px;">
+  <label class="ml-5"><h1>Q3 : Marry gave me … apple yesterday . </h1></label><br>
+  
+  <div>
+    &nbsp;<input class="ml-5" type="radio" name="answer13" required="required" value="a"> a <br>
+    &nbsp;<input class="ml-5" type="radio" name="answer13" required="required" value="an"> an <br>
+    &nbsp;<input class="ml-5" type="radio" name="answer13" required="required" value="no thing"> - (no thing) <br>
+  </div>
+</div>
+</div>
+
+<div class="row">
+ <div class="col p-5 font-weight-bolder " style="background-color: #F7CCEC ; font-size: 20px;">
+  <label class="ml-5"><h1>Q4 : Where are you from ?</h1></label><br>
+  
+  &nbsp;<input class="ml-5" type="radio" name="answer14" required="required" value="I am from England"> I am from England.<br>
+  &nbsp;<input class="ml-5" type="radio" name="answer14" required="required" value="I am fine"> I am fine.<br>
+  &nbsp;<input class="ml-5" type="radio" name="answer14" required="required" value="You are right"> You are right.
+  <br>
+</div>
+</div>
+
+<div class="row">
+ <div class="col p-5 font-weight-bolder " style="color:#061E56 ; font-size: 20px;">
+  <label class="ml-5"><h1>Q5 : I have got four blue … .</h1></label>
+  <div class="row">
+ <div class="col-3 p-5 font-weight-bolder ">
+   <img  src="img/box.jpg" alt="4boxes" width="300" height="200"><br>
+</div>
+<div class="col-3 mt-5 p-5 font-weight-bolder ">
+    &nbsp;<input class="ml-5" type="radio" name="answer15" required="required" value="box"> box <br>
+    &nbsp;<input class="ml-5 mt-3" type="radio" name="answer15" required="required" value="boxs"> boxs<br>
+    &nbsp;<input class="ml-5 mt-3" type="radio" name="answer15" required="required" value="boxes"> boxes<br>
+  </div>
+</div>
+</div>
+</div>
+<br>
+<br>
+<button type="submit" class="btn text-center text-white font-weight-bolder float-right mr-5 pl-4 pr-4"  style="background-color:#58A6E7;">Next</button>
+</form>
+
+
+
+
+
+
+<br><br><br><br>
+
+<footer class="copyright py-4 text-center text-white " style="background-color:#58A6E7;">
+  <div class="container">
+    <h6>Copyright © Your Website 2019</>
+    </div>
+  </footer>
+</body>
+</html>

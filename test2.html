@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kids IQ test </title>
+	<meta charset="UTF-8">
+	<meta name="description" content="The best iq test for kids">
+	<meta name="keywords" content=" iq test , All kids are smart , 10 questions for every question 100 marks ">
+	<meta name="author" content="The little Genius center">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="custom2.css">
+	<link rel="icon" type="img" href="img/iq2.png">
+	<link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome-free-5.11.2-web/css/all.css">
+	<script type="text/javascript">
+		function submitAnswers() {
+			var form = document.quizForm;
+			var q6 = form.elements['answer6'].value;
+			localStorage.setItem("question6",q6);
+			var q7 = form.elements['answer7'].value;
+			localStorage.setItem("question7",q7);
+			var q8 = form.elements['answer8'].value;
+			localStorage.setItem("question8",q8);
+			var q9 = form.elements['answer9'].value;
+			localStorage.setItem("question9",q9);
+			var q10 = form.elements['answer10'].value;
+			localStorage.setItem("question10",q10);
+			var mark2 =parseInt(localStorage.getItem("totalmark"));
+
+			if(q6 == "Green"){
+				mark2+=100;
+			}
+			if(q7 == "Animal"){
+				mark2+=100;	
+			}
+			if(q8 == "Bear"){
+				mark2+=100;
+			}
+			if(q9 == "Mango"){
+				mark2+=100;
+			}
+			if(q10 == "Giraffe"){
+				mark2+=100;
+			}
+			localStorage.setItem("totalmark2",mark2);
+			window.location.href='result.html';
+			return false;
+		}
+	</script>
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-dark pl-5 pr-5" style="background-color:#58A6E7;">
+			<a class="navbar-brand"><img class="ml-5" src="img/iq2.png" width="50"><strong class="text-white mt-2 ml-2"> The little Genius</strong> </a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse text-center" >
+				<ul class="navbar-nav ml-auto">
+					<li  class="nav-item ">
+						<a id="na" class="nav-link pt-3 px-0 px-lg-3  js-scroll-trigger font-weight-bolder text-dark"  href="home.html"><h4>logout</h4></a>
+					</li>
+					
+					
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<form name="quizForm" onsubmit="return submitAnswers()">
+		<div class="row">
+			<div class="col p-5 font-weight-bolder " style="color:#061E56 ; font-size: 20px;">
+				<label class="ml-5"><h1>Q6 : What color do you get when you mix yellow and blue ?</h1></label><br>
+				
+				<div class="text-center">
+					<img class="mb-5"  src="img/04.jpg" alt="color" width="800" height="400"><br>
+					<input  type="radio" name="answer6" required="required" value="Red"> Red
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="ml-5" type="radio" name="answer6" required="required" value="Green"> Green
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input  type="radio" name="answer6" required="required" value="Blue"> Blue
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="ml-5" type="radio" name="answer6" required="required" value="Orange"> Orange
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input  type="radio" name="answer6" required="required" value="Pink"> Pink
+					
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col p-5 font-weight-bolder" style="background-color: #F7CCCD ; font-size: 20px;">
+				<label class="ml-5"><h1>Q7 : If you rearrange the letters "KOMENY", you would have the name of a:</h1></label><br>
+				<br>
+				&nbsp;<input class="ml-5" type="radio" name="answer7" required="required" value="Ocean"> Ocean <br>
+				&nbsp;<input class="ml-5" type="radio" name="answer7" required="required" value="Animal"> Animal <br>
+				&nbsp;<input class="ml-5" type="radio" name="answer7" required="required" value="Country"> Country<br>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col p-5 font-weight-bolder " style="color:#061E56 ; font-size: 20px;">
+				<label class="ml-5"><h1>Q8 : What animal hibernates during the winter ?</h1></label><br>
+				<div class="text-center mt-5">
+					&nbsp;<input class="ml-5" type="radio" name="answer8" required="required" value="Wolf"><img src="img/13_3.jpg" alt="wolf" width="200">
+					&nbsp;<input class="ml-5" type="radio" name="answer8" required="required" value="Tiger"> <img src="img/13_4.jpg" alt="tiger" width="200">
+					&nbsp;<input class="ml-5" type="radio" name="answer8" required="required" value="Bear"> <img src="img/13_5.jpg" alt="bear" width="200">
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col p-5 font-weight-bolder " style="background-color: #CCF7D3 ; font-size: 20px;">
+				<label class="ml-5"><h1>Q9 : Which is not a Vegetables ?</h1></label><br>
+				
+				&nbsp;<input class="ml-5" type="radio" name="answer9" required="required" value="Tomato"> Tomato &nbsp;<br>
+				&nbsp;<input class="ml-5" type="radio" name="answer9" required="required" value="Mango"> Mango<br>
+				&nbsp;<input class="ml-5" type="radio" name="answer9" required="required" value="Potato"> Potato<br>
+				&nbsp;<input class="ml-5" type="radio" name="answer9" required="required" value="Onions"> Onions<br>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col p-5 font-weight-bolder " style="color:#061E56 ; font-size: 20px;">
+				<label class="ml-5"><h1>Q10 :  Which can reach the highest ?</h1></label><br>
+				
+				&nbsp;<input class="ml-5" type="radio" name="answer10" required="required" value="Lion"> Lion<br>
+				&nbsp;<input class="ml-5" type="radio" name="answer10" required="required" value="Deer"> Deer<br>
+				&nbsp;<input class="ml-5" type="radio" name="answer10" required="required" value="Kangaroo"> Kangaroo<br>
+				&nbsp;<input class="ml-5" type="radio" name="answer10" required="required" value="Giraffe"> Giraffe<br>
+			</div>
+		</div>
+		<br>
+		<br>
+		<button type="submit" class="btn text-center text-white font-weight-bolder float-right mr-5 pl-4 pr-4"  style="background-color:#58A6E7;">Finish</button>
+	</form>
+
+
+
+
+
+
+	<br><br><br><br>
+
+	<section class="copyright py-4 text-center text-white " style="background-color:#58A6E7;">
+		<div class="container">
+			<h6>Copyright © Your Website 2019</>
+			</div>
+		</section>
+	</body>
+	</html>

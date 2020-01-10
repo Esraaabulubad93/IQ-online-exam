@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kids IQ test </title>
+  <meta charset="UTF-8">
+  <meta name="description" content="The best iq test for kids">
+  <meta name="keywords" content=" iq test , All kids are smart , 10 questions for every question 100 marks ">
+  <meta name="author" content="The little Genius center">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="img" href="img/iq2.png">
+  <link rel="stylesheet" type="text/css" href="custom2.css">
+  <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="fontawesome-free-5.11.2-web/css/all.css">
+  <script type="text/javascript">
+   function submitAnswers() {
+    var form = document.quizForm;
+    var q1 = form.elements['answer1'].value;
+    localStorage.setItem("question1",q1);
+    var q2 = form.elements['answer2'].value;
+    localStorage.setItem("question2",q2);
+    var q3 = form.elements['answer3'].value;
+    localStorage.setItem("question3",q3);
+    var q4 = form.elements['answer4'].value;
+    localStorage.setItem("question4",q4);
+    var q5 = form.elements['answer5'].value;
+    localStorage.setItem("question5",q5);
+    var mark=0 ;
+    if(q1 == "Red"){
+      mark+=100;
+    }
+    if(q2 == "Cloth"){
+      mark+=100;	
+    }
+    if(q3 == "Friday"){
+      mark+=100;
+    }
+    if(q4 == "120"){
+      mark+=100;
+    }
+    if(q5 == "caterpillar1"){
+      mark+=100;
+    }
+    localStorage.setItem("totalmark",mark);
+    window.location.href='test2.html';
+    return false;
+  }
+</script>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark pl-5 pr-5" style="background-color:#58A6E7;">
+      <a class="navbar-brand"><img class="ml-5" src="img/iq2.png" width="50"><strong class="text-white mt-2 ml-2"> The little Genius</strong> </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" >
+        <ul class="navbar-nav ml-auto">
+          <li  class="nav-item ">
+            <a id="na" class="nav-link pt-3 px-0 px-lg-3  js-scroll-trigger font-weight-bolder text-dark"  href="home.html"><h4>logout</h4></a>
+          </li>
+          
+          
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <form name="quizForm" onsubmit="return submitAnswers()">
+    <div class="row">
+     <div class="col p-5 font-weight-bolder " style="color:#061E56 ; font-size: 20px;">
+      <label class="ml-5"><h1>Q1 :  What is the color of blood?</h1></label><br>
+      
+      &nbsp;<input class="ml-5" type="radio" name="answer1" required="required" value="Blue"> Blue<br>
+      &nbsp;<input class="ml-5" type="radio" name="answer1" required="required" value="Red"> Red<br>
+      &nbsp;<input class="ml-5" type="radio" name="answer1" required="required" value="Black"> Black<br>
+      &nbsp;<input class="ml-5" type="radio" name="answer1" required="required" value="Yellow"> Yellow<br>
+    </div>
+  </div>
+
+  <div class="row">
+   <div class="col p-5 font-weight-bolder" style="background-color: #9CD6E3 ; font-size: 20px;">
+   	<label class="ml-5"><h1>Q2 :  What are clothes made of ?</h1></label><br>
+   	
+    &nbsp;<input class="ml-5 " type="radio" name="answer2" required="required" value="Cloth"> Cloth<br>
+    &nbsp;<input class="ml-5" type="radio" name="answer2" required="required" value="Paper"> Paper<br>
+    &nbsp;<input class="ml-5" type="radio" name="answer2" required="required" value="Wood"> Wood<br>
+    &nbsp;<input class="ml-5" type="radio" name="answer2" required="required" value="Glass"> Glass<br>
+  </div>
+</div>
+<div class="row">
+ <div class="col p-5 font-weight-bolder " style="color:#061E56 ; font-size: 20px;">
+  <label class="ml-5"><h1>Q3 : If 3rd of December is Tuesday so the sixth of December is ?</h1></label><br>
+  
+  <div class="text-center">
+    <img class="mb-5"  src="img/08.jpg" alt="Calender" width="800" height="400"><br>
+    <input  type="radio" name="answer3" required="required" value="Wednesday"> Wednesday
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="ml-5" type="radio" name="answer3" required="required" value="Friday"> Friday
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="ml-5" type="radio" name="answer3" required="required" value="Saturday"> Saturday
+  </div>
+</div>
+</div>
+
+<div class="row">
+ <div class="col p-5 font-weight-bolder " style="background-color: #F7CCEC ; font-size: 20px;">
+  <label class="ml-5"><h1>Q4 : How many minutes are there in a two hours ?</h1></label><br>
+  
+  &nbsp;<input class="ml-5" type="radio" name="answer4" required="required" value="60"> 60 minutes<br>
+  &nbsp;<input class="ml-5" type="radio" name="answer4" required="required" value="120"> 120 minutes<br>
+  &nbsp;<input class="ml-5" type="radio" name="answer4" required="required" value="90"> 90 minutes<br>
+  &nbsp;<input class="ml-5" type="radio" name="answer4" required="required" value="150"> 150 minutes<br>
+</div>
+</div>
+
+<div class="row">
+ <div class="col p-5 font-weight-bolder " style="color:#061E56 ; font-size: 20px;">
+  <label class="ml-5"><h1>Q5 : Which caterpillar is longer ?</h1></label><br>
+  <div class="text-center">
+    <img class="mb-5"  src="img/cater.jpg" alt="caterpillar" width="800" height="400"><br>
+    <input  type="radio" name="answer5" required="required" value="caterpillar1"> caterpillar 1
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="ml-5" type="radio" name="answer5" required="required" value="caterpillar2"> caterpillar 2
+  </div>
+</div>
+</div>
+<br>
+<br>
+<button type="submit" class="btn text-center text-white font-weight-bolder float-right mr-5 pl-4 pr-4"  style="background-color:#58A6E7;">Next</button>
+</form>
+
+
+
+
+
+
+<br><br><br><br>
+
+<footer class="copyright py-4 text-center text-white " style="background-color:#58A6E7;">
+  <div class="container">
+    <h6>Copyright © Your Website 2019</>
+    </div>
+  </footer>
+</body>
+</html>

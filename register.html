@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<title>Kids IQ test </title>
+  <meta charset="UTF-8">
+  <meta name="description" content="The best iq test for kids">
+  <meta name="keywords" content=" iq test , All kids are smart , 10 questions for every question 100 marks ">
+  <meta name="author" content="The little Genius center">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="img" href="img/iq2.png">
+  <link rel="stylesheet" type="text/css" href="custom2.css">
+  <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="fontawesome-free-5.11.2-web/css/all.css">
+
+  <script type="text/javascript">
+  /*localStorage.setItem("user","Admin");
+  localStorage.setItem("pass",12345);
+  var name = localStorage.getItem("user");
+  var password = localStorage.getItem("pass");*/
+  function submitreg() {
+    var form = document.formtwo;
+    var name = form.elements['username'].value;
+    var password = form.elements['userpass'].value;
+    localStorage.setItem("user",name);
+    localStorage.setItem("pass",password);
+    window.location.href='login.html';
+    return false;
+  }
+  
+  
+</script>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark pl-5 pr-5" style="background-color:#58A6E7;">
+      <a class="navbar-brand"><img class="ml-5" src="img/iq2.png" width="50"><strong class="text-white mt-2 ml-2"> The little Genius</strong> </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" >
+        <ul class="navbar-nav ml-auto">
+          <li  class="nav-item ">
+            <a id="na"  class="nav-link pt-3 px-0 px-lg-3  js-scroll-trigger font-weight-bolder text-dark"  href="home.html"><h4>Home</h4></a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a id="na" class="nav-link pt-3 px-0 px-lg-3 js-scroll-trigger  font-weight-bolder text-dark" href="login.html"><h4>Login</h4></a>
+          </li>
+          
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+
+
+  <h1 class="mt-5 ml-5 font-weight-bolder">Register</h1>
+  <hr>
+  <div class="row ">
+   <div class="col-sm-5  mt-5 ml-5">
+     <form class="ml-5 font-weight-bolder" name="formtwo" onsubmit="return submitreg()" style="font-size: 20px; color: #1D8BB7;">
+      <br><br>
+      User Name &nbsp;&nbsp;&nbsp;&nbsp; <input type="text" required="required"  class="fadeIn second ml-4" name="username" placeholder="&nbsp;Enter your Name"><br><br>
+      Password &nbsp;&nbsp;&nbsp;<input type="password" required="required" id="password" class="fadeIn third ml-5" name="userpass" placeholder="&nbsp;Enter your password"><br><br>
+      Email  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" required="required"  class="fadeIn second ml-5" name="email" placeholder="&nbsp;Enter your Email"><br><br>
+      <button type="submit" class="btn text-center text-white font-weight-bolder   pl-4 pr-4"  style="background-color:#1D8BB7; margin-left: 283px;">Next</button>
+    </form>
+  </div>
+
+  <div class="col-sm-4">
+   <img  src="img/iq2.png" alt="Genius kids">
+ </div>
+</div>
+
+
+
+<footer class="copyright py-4 text-center text-white mt-5 " style="background-color:#58A6E7;">
+  <div class="container">
+    <h6>Copyright © Your Website 2019</>
+    </div>
+  </footer>
+</body>
+</html>
